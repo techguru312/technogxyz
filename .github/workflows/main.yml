@@ -1,0 +1,41 @@
+"Nom du journal :System
+Source :       Microsoft-Windows-DriverFrameworks-UserMode
+Date :         23/09/2019 10:43:12
+ID de l’événement :10110
+Catégorie de la tâche :User-mode Driver problems.
+Niveau :       Critique
+Mots clés :    
+Utilisateur :  Système
+Ordinateur :   XXXXXXXXXXXX.XXX
+Description :
+Un problème s’est produit avec un ou plusieurs pilotes mode-utilisateur et le processus hôte a été arrêté. Par conséquent, l’accès aux périphériques peut être momentanément interrompu.
+XML de l’événement :
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-DriverFrameworks-UserMode" Guid="{2e35aaeb-857f-4beb-a418-2e6c0e54d988}" />
+    <EventID>10110</EventID>
+    <Version>1</Version>
+    <Level>1</Level>
+    <Task>64</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x2000000000000000</Keywords>
+    <TimeCreated SystemTime="2019-09-23T08:43:12.782223100Z" />
+    <EventRecordID>47571</EventRecordID>
+    <Correlation />
+    <Execution ProcessID="132" ThreadID="1088" />
+    <Channel>System</Channel>
+    <Computer>win10srv.pag.lan</Computer>
+    <Security UserID="S-1-5-18" />
+  </System>
+  <UserData>
+    <UMDFHostProblem xmlns="http://www.microsoft.com/DriverFrameworks/UserMode/Event">
+      <LifetimeId>{a10ea718-42fe-4877-8f40-078363dd16fe}</LifetimeId>
+      <Problem>8</Problem>
+      <DetectedBy>2</DetectedBy>
+      <ActiveOperation>0</ActiveOperation>
+      <ExitCode>1879048193</ExitCode>
+      <Message>0</Message>
+      <Status>4294967295</Status>
+    </UMDFHostProblem>
+  </UserData>
+</Event>"
